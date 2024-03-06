@@ -1,7 +1,7 @@
 // entry point to application is void main() function
 
 void main(){
-  //NAMING STYLE
+//NAMING STYLE
 // GLOBAL and LOCAL Scope
 
 /**
@@ -26,11 +26,23 @@ Control Structures (if statements, loops - for, while).
    * -> Naming Aproach -> CamelCase
    * - string interpolation(combination of string and variable)
    */
+  
+// Variables and Data Types (int, double, String, bool).
+int ageOfAthlete = 40;
+int rank = 2;
+String name = "Kip-Naniii"; 
+String country = "Kenya";
+double weight = 40.5;
+double height = 100.25;
+bool isMarried = false; 
+dynamic id = 122345; // 123ABCD
+// print("My name is $name, I am $ageOfAthlete years old. I reside in $country. I am ranked as position $rank worldwide. My heigh tid $height.");
 /** PROBLEM 1 */
 /**
 Challenge Description: Variable Swap
 
-Write a Dart program that swaps the values of two variables without using a third variable.
+Write a Dart program that swaps the values of two variables 
+without using a third variable.
 
 Requirements:
 
@@ -65,6 +77,22 @@ var1 = 5 ; var2 = 10;
      * remove(elementNam) or removeAt(index)
      * insert(position, element)
      */ 
+List sportsInKenya = [ "Swimming", "Rugby", "Football", "F1", "Motocross","Chess"];
+dynamic output = "";
+output = sportsInKenya[1] ; // read one sport
+sportsInKenya.add("cricket") ; // read one sport
+sportsInKenya.addAll(["cricket", "badminton", "Golf"]) ; // read one sport
+sportsInKenya.remove("cricket");// remove target elemnt
+sportsInKenya.removeAt(3);// remove target elemnt
+output = sportsInKenya;
+// print(output);
+
+// 
+
+
+
+
+
 
      /**
       * MAPS
@@ -79,6 +107,12 @@ var1 = 5 ; var2 = 10;
       * remove one => map.clear(key)
       * 
       */
+
+// print(student["name"]);
+// print(student["age"]);
+// student["course"] = "Software Dev";
+// print(student);
+
 
       //   Map student = {
       //     "Name": "Ericsson Lab",
@@ -101,11 +135,6 @@ var1 = 5 ; var2 = 10;
    *  -,/,+,%,*
    * 
    * */
-// subtraction
-// addition
-// division
-// multiplication
-
 /** PROBLEM 2 */
 /** 
 CHALLENGE Description: Sales Report
@@ -213,6 +242,20 @@ Inheritance and Polymorphism.
    *  Ternary operator --> {condition} ? {return if true} : {return if false}
 */
 
+// parameterized function
+int summation(int x, int y){
+  int sum = x + y;
+  print("Sum of $x and $y is $sum");
+  return sum;
+}
+// summation(10, 230);
+void sum(){
+  int x = 29;
+  int y= 200;
+  print("Sum of $x and $y is ${x+y}");
+}
+
+sum();
 /**
    * DISCRETE 
    * && , ||, ! , == 
@@ -255,5 +298,14 @@ Inheritance and Polymorphism.
  /*
   1. Read and write two articles based on :
   -> Introduction to Flutter ( include the architecture )
-  -> Classes & Objects ( start here:'https://dart.dev/language/classes' ), Concurrency (start here: 'https://dart.dev/language/async') and Null Safety (start here: 'https://dart.dev/null-safety') 
+  -> Classes & Objects ( start here:'https://dart.dev/language/classes' ),
+   Concurrency (start here: 'https://dart.dev/language/async') and Null Safety (start here: 'https://dart.dev/null-safety') 
 */
+
+
+/**
+ * CLASS ASSIGNEMNT 4
+ * - Write code that would cook your favourite dish 
+ * - factor in the basics of we have covered so far..
+ * eg  making homemade yorghut/ mandazi, chapati etc...
+ */
